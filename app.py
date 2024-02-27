@@ -19,7 +19,7 @@ mongo = PyMongo(app)
 
 @app.route("/")
 @app.route("/get_coffee")
-def get_coffees():
+def get_coffee():
     coffee = mongo.db.coffee.find()
     return render_template("coffee.html", coffee=coffee)
 
