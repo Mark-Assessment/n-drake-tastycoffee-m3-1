@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/get_coffee")
 def get_coffees():
     coffee = mongo.db.coffee.find()
-    return render_template("coffee.html", coffees=coffees)
+    return render_template("coffee.html", coffee=coffee)
 
 
 if __name__ == "__main__":
