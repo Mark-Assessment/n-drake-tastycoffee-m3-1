@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Coffee</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>Base template ext!</h2>
+
     {% for coffee in coffee %}
         {{ coffee.species_name }}<br>
         {{ coffee.coffee_strength }}<br>
@@ -14,5 +11,5 @@
         {{ coffee.coffee_quality }}<br>
         {{ coffee.description }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
