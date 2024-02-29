@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_coffee")
 def get_coffee():
-    coffee = mongo.db.coffee.find()
+    coffee = list(mongo.db.coffee.find())
     return render_template("coffee.html", coffee=coffee)
 
 
