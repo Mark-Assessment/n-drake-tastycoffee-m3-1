@@ -14,15 +14,15 @@
                             <option value="{{ species.species_type }}">{{ species.species_type }}</option>
                         {% endfor %}
                     </select>
-					<label for="species_name">Coffee Species</label>
+					<label for="species_type">Coffee Species</label>
 				</div>
 			</div>
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-seedling prefix brown-text text-darken-1"></i>
-                    <input id="species_name" name="species_name" minlength="5" maxlength="10"
+                    <input id="coffee_name" name="coffee_name" minlength="5" maxlength="15"
                         type="text" class="validate" required>
-                    <label for="species_name">Coffee Variety</label>
+                    <label for="coffee_name">Coffee Name</label>
                 </div>
             </div>
             <div class="row">
