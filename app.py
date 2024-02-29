@@ -97,7 +97,7 @@ def logout():
 
 @app.route("/add_coffee")
 def add_coffee():
-    species = mongo.db.species.find().sort("species_name", 1)
+    species = mongo.db.species.find().sort("species_type", 1)
     return render_template("add_coffee.html", species=species)
 
 if __name__ == "__main__":
