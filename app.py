@@ -49,6 +49,7 @@ def register():
     
     return render_template("register.html")
 
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -77,6 +78,7 @@ def login():
 
     return render_template("login.html")
 
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
@@ -88,12 +90,14 @@ def profile(username):
 
     return redirect(url_for("login"))
 
+
 @app.route("/logout")
 def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
 
 @app.route("/add_coffee", methods=["GET", "POST"])
 def add_coffee():
@@ -112,6 +116,14 @@ def add_coffee():
 
     species = mongo.db.species.find().sort("species_type", 1)
     return render_template("add_coffee.html", species=species)
+
+
+@app.route("/edit_coffee/<coffee_id>", methods=["GET", "POST"])
+def edit_coffee(coffee_id):
+    coffee = mongo.db.coffee.find_one({"_id": ObjectId(coffee_id)})
+    species = mongo.db.species.find().sort("species_type", 1)
+    return render_template("edit_coffee.html", coffee=coffee, species=species)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
