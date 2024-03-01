@@ -120,6 +120,18 @@ def add_coffee():
 
 @app.route("/edit_coffee/<coffee_id>", methods=["GET", "POST"])
 def edit_coffee(coffee_id):
+    if request.method == "POST":
+        submit = {
+            "species_type": request.form.get("species_type"),
+            "coffee_name": request.form.get("coffee_name"),
+            "coffee_strength": request.form.get("coffee_strength"),
+            "coffee_quality": request.form.get("coffee_quality"),
+            "coffee_description": request.form.get("coffee_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.coffee.update({"_id": ObjectId(coffee_id)}, submit)
+        flash("Coffee Successfully Updated")
+
     coffee = mongo.db.coffee.find_one({"_id": ObjectId(coffee_id)})
     species = mongo.db.species.find().sort("species_type", 1)
     return render_template("edit_coffee.html", coffee=coffee, species=species)

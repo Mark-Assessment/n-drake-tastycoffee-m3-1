@@ -9,10 +9,14 @@
 				<div class="input-field col s12">
                     <i class="fas fa-folder-open prefix brown-text text-darken-1"></i>
 					<select id="species_type" name="species_type" class="validate" required>
-                        <option value="" disabled selected>Choose Coffee Species</option>
-                        {% for species in species %}
+                        <option value="" disabled>Choose Coffee Species</option>
+                    {% for species in species %}
+                        {% if species.species_type == coffee.species_type %}
+                            <option value="{{ species.species_type }}" selected>{{ species.species_type }}</option>
+                        {% else %}
                             <option value="{{ species.species_type }}">{{ species.species_type }}</option>
-                        {% endfor %}
+                        {% endif %}
+                    {% endfor %}
                     </select>
 					<label for="species_type">Coffee Species</label>
 				</div>
@@ -22,7 +26,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-seedling prefix brown-text text-darken-1"></i>
                     <input id="coffee_name" name="coffee_name" minlength="5" maxlength="25"
-                        type="text" class="validate" required>
+                        value="{{ coffee.coffee_name }}" type="text" class="validate" required>
                     <label for="coffee_name">Coffee Name</label>
                 </div>
             </div>
@@ -31,7 +35,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-hand-fist prefix brown-text text-darken-1"></i>
                     <input id="coffee_strength" name="coffee_strength" minlength="5" maxlength="15"
-                        type="text" class="validate" required>
+                        value="{{ coffee.coffee_strength }}" type="text" class="validate" required>
                     <label for="coffee_strength">Coffee Strength</label>
                 </div>
             </div>
@@ -40,7 +44,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-star prefix brown-text text-darken-1"></i>
                     <input id="coffee_quality" name="coffee_quality" minlength="5" maxlength="15"
-                        type="text" class="validate" required>
+                        value="{{ coffee.coffee_quality }}" type="text" class="validate" required>
                     <label for="coffee_quality">Coffee Quality</label>
                 </div>
             </div>
@@ -49,13 +53,19 @@
                 <div class="input-field col s12">
                     <i class="fas fa-pencil prefix brown-text text-darken-1"></i>
                     <textarea id="coffee_description" name="coffee_description" minlength="5"
-                        maxlength="500" class="materialize-textarea validate" required></textarea>
+                        maxlength="500" class="materialize-textarea validate" required>
+                        {{- coffee.coffee_description -}}
+                        </textarea>
                     <label for="coffee_description">Coffee Description</label>
                 </div>
             </div>
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
+                    <!-- cancel button -->
+                    <a href="{{ url_for('get_coffee') }}" class="btn-large orange darken-1 text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
                     <button type="submit" class="btn-large brown darken-1 text-shadow">
                         Edit Coffee <i class="fas fa-edit right"></i>
                     </button>
