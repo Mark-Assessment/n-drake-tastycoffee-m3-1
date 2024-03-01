@@ -129,7 +129,7 @@ def edit_coffee(coffee_id):
             "coffee_description": request.form.get("coffee_description"),
             "created_by": session["user"]
         }
-        mongo.db.coffee.update({"_id": ObjectId(coffee_id)}, submit)
+        mongo.db.coffee.update_one({"_id": ObjectId(coffee_id)}, submit)
         flash("Coffee Successfully Updated")
 
     coffee = mongo.db.coffee.find_one({"_id": ObjectId(coffee_id)})
