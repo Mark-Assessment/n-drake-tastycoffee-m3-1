@@ -1,16 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <h3 class="brown-text text-darken-1 center-align">All Coffees</h3>
+
     <ul class="collapsible popout">
         {% for coffee in coffee %}
         <li>
             <div class="collapsible-header white-text brown darken-1 text-shadow">
                 <i class="fas fa-caret-down"></i>
-                <strong>{{ coffee.coffee_name }}</strong> : {{ coffee.coffee_quality }}
+                <strong>{{ coffee.coffee_name }}</strong> : {{ coffee.species_name }}
             </div>
             <div class="collapsible-body">
-                <strong>{{ coffee.caffeine_levels }}</strong>
+                <strong>{{ coffee.coffee_strength }}"(Strength)"</strong>
                 <p>{{ coffee.description }}</p>
+                <p><em>by: {{ coffee.created_by }}</em></p>
             </div>
         </li>
         {% endfor %}

@@ -95,8 +95,20 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-@app.route("/add_coffee")
+@app.route("/add_coffee", methods=["GET", "POST"])
 def add_coffee():
+    if request.method == "POST":
+        coffee = {
+            "species_type": request.form.get("species_type"),
+            "coffee_name": request.form.get("coffee_name"),
+            "coffee_strength": request.form.get("coffee_strength"),
+            "coffee_description": request.form.get("coffee_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.coffee.insert_one(coffee)
+        flash("Coffee Successfully Added")
+        return redirect(url_for("get_coffee"))
+
     species = mongo.db.species.find().sort("species_type", 1)
     return render_template("add_coffee.html", species=species)
 
