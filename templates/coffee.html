@@ -8,11 +8,11 @@
         <li>
             <div class="collapsible-header white-text brown darken-1 text-shadow">
                 <i class="fas fa-caret-down"></i>
-                <strong>{{ coffee.coffee_name }}</strong> : {{ coffee.species_name }}
+                <strong>{{ coffee.coffee_name }}</strong> : <em>{{ coffee.species_type }}</em>
             </div>
             <div class="collapsible-body">
-                <strong>Strength:{{ coffee.coffee_strength }}</strong>
-                <strong>Quality:{{ coffee.coffee_quality }}</strong>
+                <i class="fas fa-hand-fist"><strong>Strength : {{ coffee.coffee_strength }}</strong></i><br> 
+                <strong>Quality : {{ coffee.coffee_quality }}</strong>
                 <p>{{ coffee.coffee_description }}</p>
                 <p><em>by: {{ coffee.created_by }}</em></p>
             </div>

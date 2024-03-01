@@ -102,6 +102,7 @@ def add_coffee():
             "species_type": request.form.get("species_type"),
             "coffee_name": request.form.get("coffee_name"),
             "coffee_strength": request.form.get("coffee_strength"),
+            "coffee_quality": request.form.get("coffee_quality"),
             "coffee_description": request.form.get("coffee_description"),
             "created_by": session["user"]
         }
