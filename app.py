@@ -136,6 +136,12 @@ def edit_coffee(coffee_id):
     species = mongo.db.species.find().sort("species_type", 1)
     return render_template("edit_coffee.html", coffee=coffee, species=species)
 
+@app.route("/delete_coffee/<coffee_id>")
+def delete_coffee(coffee_id):
+    mongo.db.coffee.delete_one({"_id": ObjectId(coffee_id)})
+    flash("Coffee Successfully Deleted")
+    return redirect(url_for("get_coffee"))
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
