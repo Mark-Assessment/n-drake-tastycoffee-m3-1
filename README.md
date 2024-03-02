@@ -15,16 +15,23 @@ A snapshot of the project with responsive design:
 ## Table of Contents
 
 - [Introduction](#introduction)
-  - [Programming Languages](#programming-languages)
-  - [Frameworks and Libraries](#frameworks-and-libraries)
-  - [Databases](#databases)
-  - [Version Control and Deployment](#version-control-and-deployment)
+    - [Programming Languages](#programming-languages)
+    - [Frameworks and Libraries](#frameworks-and-libraries)
+    - [Databases](#databases)
+    - [Version Control and Deployment](#version-control-and-deployment)
 - [Features](#features)
     - [Data Handling](#data-handling)
     - [Database Structure](#database-structure)
     - [User Functionality](#user-functionality)
     - [Use of Technologies](#use-of-technologies)
     - [Structure](#structure)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Deployment](#deployment)
+- [User Experience UX](#user-experience-ux)
+    - [User Stories](#user-stories)
+    - [Design Choices](#design-choices)
 
 
 ## Introduction
@@ -90,5 +97,71 @@ Incorporates a structured layout, ensuring easy access to different sections of 
 
 This website ensures efficient management and exploration of coffee profiles, catering to the needs of its vibrant community of users.
 
+## Getting Started
+
+To get a copy of this project up and running on your local machine, follow these steps.
+
+### Prerequisites
+
+- Web browser: (Chrome, Firefox, Safari, etc.)
+- IDE or Text Editor: (GitPod, Visual Studio Code, Sublime Text, Atom, etc.)
+
+### Installation
+
+1. Clone my repository with the following link:
+
+[Git Clone](https://github.com/OrgNateDrake/milestone-project-3)
+
+2. Open the project in your preferred IDE or Text Editor.
+
+### Deployment
+
+You can view the live site through **Heroku**, using the following link:
+
+[Heroku - Live Site](https://milestone-3-project-29f9ad62c493.herokuapp.com)
+
+The project was also deployed with GitHub Pages using the following steps...
+
+1. Log in to [GitHub](https://github.com/).
+2. At the top of the Repository (not top of page), locate and click the **Settings** Button on the menu.
+3. Scroll down the Settings page until you locate the **Pages** Section (on the left of the page) and click.
+4. Under **Build and deployment**, **Branch**. Click the dropdown called "None" and select **Main Branch**.
+5. The page will automatically refresh.
+6. Click **Save**.
+7. Scroll back down through the page to locate the now published [Site Link](https://github.com) in the **GitHub Pages** section.
 
 
+## User Experience UX
+
+### User Stories
+
+**Title:** Tasty Coffee - A website for coffee lovers, offering a comprehensive platform to browse, create, update and delete profiles of different coffee types and origin.
+
+1. As a coffee enthusiast, I want to browse through profiles of different coffee types, so I can discover new flavors and learn more about the intricacies of coffee beans from around the world.
+   - **Outcome:** The website provides a comprehensive platform where users can easily browse and explore profiles of various coffee types, allowing them to discover new flavors and expand their knowledge of coffee.
+
+2. As a beginner in the world of coffee, I want to explore the website to gain knowledge about different coffee varieties and their flavor profiles, so I can start my coffee journey with confidence and excitement.
+   - **Outcome:** Users, especially beginners, can access detailed information about different coffee varieties and their flavor profiles on the website, enabling them to embark on their coffee journey with confidence and enthusiasm.
+
+3. As a seasoned coffee connoisseur, I want to contribute my expertise by adding new coffee profiles to the website, sharing my knowledge and passion with the community and helping others discover new favorites.
+   - **Outcome:** Users are empowered to contribute to the website by adding new coffee profiles, fostering a sense of community and collaboration among coffee enthusiasts, and enriching the platform with diverse and valuable content.
+
+4. As a member of the coffee-loving community, I want to edit existing coffee profiles to provide more accurate information or updates, ensuring that our collective knowledge remains current and comprehensive.
+   - **Outcome:** The website allows users to edit existing coffee profiles, ensuring that the information provided remains accurate and up-to-date, thereby maintaining the integrity and reliability of the platform as a valuable resource for coffee enthusiasts.
+
+5. As a user invested in sustainability and ethical sourcing, I want to discover information about the ethical practices and sustainability initiatives of coffee producers, enabling me to make informed choices and support responsible coffee cultivation.
+   - **Outcome:** Users can access information about the ethical practices and sustainability initiatives of coffee producers on the website, enabling them to make informed choices and support responsible coffee cultivation, thereby contributing to sustainability efforts within the coffee industry.
+
+**These user stories covered the basic functionality and interactions of the 'Tasty Coffee' website as it stands. Additional user stories below include future updates like; discussions about coffee profiles, more options around which coffees suit which preparation method, sustainability, sourcing and cultural aspects of coffee types.**
+
+1. As a user passionate about coffee brewing, I want to find detailed information about brewing techniques associated with different coffee types, so I can experiment with new brewing methods and enhance my coffee experience.
+   - **Outcome:** Users can access detailed information about brewing techniques associated with different coffee types on the website, enabling them to experiment with new brewing methods and enhance their coffee brewing skills and experience.
+
+2. As a coffee enthusiast interested in the cultural aspect of coffee, I want to learn about the origins and traditions associated with each coffee type, enriching my appreciation for the diverse world of coffee.
+   - **Outcome:** The website provides users with information about the origins and cultural traditions associated with each coffee type, enriching their appreciation for the cultural diversity and heritage of coffee production around the world.
+
+3. As a member of the coffee community, I want to engage in discussions and share experiences with other users, fostering a sense of camaraderie and learning from each other's insights and perspectives.
+   - **Outcome:** The website facilitates discussions and interactions among users, fostering a sense of camaraderie and enabling users to share experiences, insights, and perspectives with each other, thereby enriching the overall coffee community experience.
+
+4. As a user invested in sustainability and ethical sourcing, I want to discover information about the ethical practices and sustainability initiatives of coffee producers, enabling me to make informed choices and support responsible coffee cultivation.
+   - **Outcome:** Users can access information about the ethical practices and sustainability initiatives of coffee producers on the website, enabling them to make informed choices and support responsible coffee cultivation, thereby contributing to sustainability efforts within the coffee industry.
