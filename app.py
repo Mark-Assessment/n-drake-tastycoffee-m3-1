@@ -175,6 +175,12 @@ def edit_species(species_id):
     species = mongo.db.species.find_one({"_id": ObjectId(species_id)})
     return render_template("edit_species.html", species=species)
 
+@app.route("/delete_species/<species_id>")
+def delete_species(species_id):
+    mongo.db.species.delete_one({"_id": ObjectId(species_id)})
+    flash("Species Successfully Deleted")
+    return redirect(url_for("get_species"))
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
