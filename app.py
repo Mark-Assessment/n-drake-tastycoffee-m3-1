@@ -149,6 +149,18 @@ def get_species():
     species = list(mongo.db.species.find().sort("species_type", 1))
     return render_template("species.html", species=species)
 
+@app.route("/add_species", methods=["GET", "POST"])
+def add_species():
+    if request.method == "POST":
+        species = {
+            "species_type": request.form.get("species_type")
+        }
+        mongo.db.species.insert_one(species)
+        flash("New Species Added")
+        return redirect(url_for("get_species"))
+
+    return render_template("add_species.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
