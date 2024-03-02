@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="brown-text text-darken-1 center-align">Tasty Coffees Added By Our Community!</h3>
+    <h3 class="brown-text text-darken-1 center-align">Tasty Coffees!</h3>
+    <h4 class="brown-text text-darken-1 center-align">Added by our community</h4>
 
-    <div class="col s12 m4 card-panel brown lighten-4">
+    <div class="col card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
