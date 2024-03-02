@@ -25,6 +25,13 @@ def get_coffee():
     return render_template("coffee.html", coffee=coffee)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    coffee = list(mongo.db.coffee.find({"$text": {"$search": query}}))
+    return render_template("coffee.html", coffee=coffee)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
