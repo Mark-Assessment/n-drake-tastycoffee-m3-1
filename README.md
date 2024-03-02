@@ -31,7 +31,8 @@ A snapshot of the project with responsive design:
     - [Deployment](#deployment)
 - [User Experience UX](#user-experience-ux)
     - [User Stories](#user-stories)
-    - [Design Choices](#design-choices)
+    - [Design Choices for the Tasty Coffee Website](#design-choices-for-the-tasty-coffee-website)
+- [Wireframes](#wireframes)
 
 
 ## Introduction
@@ -135,7 +136,7 @@ The project was also deployed with GitHub Pages using the following steps...
 
 ### User Stories
 
-**Title:** Tasty Coffee - A website for coffee lovers, offering a comprehensive platform to browse, create, update and delete profiles of different coffee types and origin.
+**Tasty Coffee** - A website for coffee lovers, offering a comprehensive platform to browse, create, update and delete profiles of different coffee types and origin.
 
 1. As a coffee enthusiast, I want to browse through profiles of different coffee types, so I can discover new flavors and learn more about the intricacies of coffee beans from around the world.
    - **Outcome:** The website provides a comprehensive platform where users can easily browse and explore profiles of various coffee types, allowing them to discover new flavors and expand their knowledge of coffee.
@@ -152,6 +153,9 @@ The project was also deployed with GitHub Pages using the following steps...
 5. As a user invested in sustainability and ethical sourcing, I want to discover information about the ethical practices and sustainability initiatives of coffee producers, enabling me to make informed choices and support responsible coffee cultivation.
    - **Outcome:** Users can access information about the ethical practices and sustainability initiatives of coffee producers on the website, enabling them to make informed choices and support responsible coffee cultivation, thereby contributing to sustainability efforts within the coffee industry.
 
+6. As a user concerned about the security of my account, I want assurance that my username and password are securely stored in the database, with passwords being altered before storage to prevent unauthorised access.
+   - **Outcome:** The website implements robust security measures to ensure that user credentials, including usernames and passwords, are encrypted and salted before being stored in the database. This provides users with peace of mind regarding the security of their accounts and personal information.
+
 **These user stories covered the basic functionality and interactions of the 'Tasty Coffee' website as it stands. Additional user stories below include future updates like; discussions about coffee profiles, more options around which coffees suit which preparation method, sustainability, sourcing and cultural aspects of coffee types.**
 
 1. As a user passionate about coffee brewing, I want to find detailed information about brewing techniques associated with different coffee types, so I can experiment with new brewing methods and enhance my coffee experience.
@@ -165,3 +169,38 @@ The project was also deployed with GitHub Pages using the following steps...
 
 4. As a user invested in sustainability and ethical sourcing, I want to discover information about the ethical practices and sustainability initiatives of coffee producers, enabling me to make informed choices and support responsible coffee cultivation.
    - **Outcome:** Users can access information about the ethical practices and sustainability initiatives of coffee producers on the website, enabling them to make informed choices and support responsible coffee cultivation, thereby contributing to sustainability efforts within the coffee industry.
+
+
+### Design Choices for the Tasty Coffee Website
+
+This website is meticulously crafted with the following design choices in mind to create an immersive and user-friendly experience:
+
+#### Coffee-Centric Theme
+- The design of our website revolves around the rich and diverse world of coffee, reflecting our passion for this beloved beverage in every aspect of the user interface.
+
+#### Color Palette
+- The color palette of our website is inspired by the rich hues associated with coffee and coffee beans. Warm tones such as deep browns, caramel, and cream are prominently featured, evoking the comforting and inviting ambiance of a cozy coffee shop. These colors are carefully selected to enhance the coffee-centric theme of the website and create a visually appealing and harmonious user experience.
+
+#### Intuitive Navigation
+- A main navigation menu is incorporated to ensure easy access to different sections of the website, allowing users to effortlessly explore profiles of various coffee types and engage with the community.
+
+#### User-Focused Interaction
+- User functionality is prioritised, with intuitive features allowing users to browse/search, add, and edit profiles of different coffee types. This empowers users to contribute their knowledge and experiences, fostering a sense of community and collaboration among coffee enthusiasts.
+
+#### Responsive Design
+- The website is designed to be responsive across various devices and screen sizes, ensuring a seamless and enjoyable browsing experience for users accessing the site from desktops, tablets, or smartphones.
+
+#### Security Measures
+- Robust security measures are implemented to safeguard user data, including the salting of passwords before storage in the database, providing users with peace of mind regarding the security of their accounts and personal information.
+
+#### Accessibility
+- Accessibility considerations are integrated into the design, ensuring that the website is usable and navigable for all users, including those with disabilities or impairments.
+
+#### Engaging Content
+- The website offers engaging and informative content, including detailed profiles of different coffee types, brewing techniques, and flavor profiles, enriching users' coffee journey and fostering a deeper understanding and appreciation for coffee.
+
+#### Community Engagement
+- Features are incorporated to facilitate community engagement, allowing users to share favourite coffees, and learn from each other's insights and perspectives, thereby enriching the overall coffee-loving community experience.
+
+
+## Wireframes
