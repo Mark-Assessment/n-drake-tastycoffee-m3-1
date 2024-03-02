@@ -162,6 +162,20 @@ def add_species():
     return render_template("add_species.html")
 
 
+@app.route("/edit_species/<species_id>", methods=["GET", "POST"])
+def edit_species(species_id):
+    if request.method == "POST":
+        submit = {
+            "species_type": request.form.get("species_type")
+        }
+        mongo.db.species.replace_one({"_id": ObjectId(species_id)}, submit)
+        flash("Species Successfully Updated")
+        return redirect(url_for("get_species"))
+
+    species = mongo.db.species.find_one({"_id": ObjectId(species_id)})
+    return render_template("edit_species.html", species=species)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
