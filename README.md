@@ -33,6 +33,12 @@ A snapshot of the project with responsive design:
     - [User Stories](#user-stories)
     - [Design Choices for the Tasty Coffee Website](#design-choices-for-the-tasty-coffee-website)
 - [Wireframes](#wireframes)
+   - [Home Page Large](#home-page-large)
+   - [Add/Edit Coffee Profiles Page Large](#addedit-coffee-profiles-page-large)
+   - [Add/Edit Coffee Species Page Large](#addedit-coffee-species-page-large)
+   - [Home Page Small/Medium](#home-page-smallmedium)
+   - [Add/Edit Coffee Profiles Page Small/Medium](#addedit-coffee-profiles-page-smallmedium)
+   - [Add/Edit Coffee Species Page Small/Medium](#addedit-coffee-species-page-smallmedium)
 
 
 ## Introduction
@@ -204,3 +210,27 @@ This website is meticulously crafted with the following design choices in mind t
 
 
 ## Wireframes
+
+### Home Page Large
+
+![Large Home Page](/images/large-wireframe-home.jpeg)
+
+### Add/Edit Coffee Profiles Page Large
+
+![Add/Edit Coffee Profiles Page](/images/large-wireframe-add-edit.jpeg)
+
+### Add/Edit Coffee Species Page Large
+
+![Add/Edit Coffee Species Page](/images/large-wireframe-add-edit-species.jpeg)
+
+### Home Page Small/Medium
+
+![Large Home Page](/images/small-med-wireframe-home.jpeg)
+
+### Add/Edit Coffee Profiles Page Small/Medium
+
+![Add/Edit Coffee Profiles Page](/images/small-med-wireframe-add-edit.jpeg)
+
+### Add/Edit Coffee Species Page Small/Medium
+
+![Add/Edit Coffee Species Page](/images/small-med-wireframe-add-edit-species.jpeg)
