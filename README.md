@@ -39,6 +39,8 @@ A snapshot of the project with responsive design:
    - [Home Page Small/Medium](#home-page-smallmedium)
    - [Add/Edit Coffee Profiles Page Small/Medium](#addedit-coffee-profiles-page-smallmedium)
    - [Add/Edit Coffee Species Page Small/Medium](#addedit-coffee-species-page-smallmedium)
+- [Attribution](#attribution)
+- [Contribution and Maintenance](#contribution-and-maintenance)
 
 
 ## Introduction
@@ -234,3 +236,65 @@ This website is meticulously crafted with the following design choices in mind t
 ### Add/Edit Coffee Species Page Small/Medium
 
 ![Add/Edit Coffee Species Page](/images/small-med-wireframe-add-edit-species.jpeg)
+
+
+## Attribution
+
+Apart from what has been attributed below. All code within this project was programmed by *Nathan Drake* and utilises skills learnt from tutorials by *The Code Institute*, within their *Full Stack Web Development* course.
+
+**Materialize** Basic framework was utilised and then tailored to the requirements set-out for this project, within the following areas:
+
+1. Navbar.
+2. Collapsible Popouts
+3. Buttons.
+4. Grids and responsive behaviours.
+5. Search.
+
+[Materialize](https://materializecss.com)
+
+**MongoDB** Was used for database creation, integration and deployment.
+
+[MongoDB](https://mongodb.com)
+
+**Font Awesome** For all icons.
+
+[Font Awesome](https://fontawesome.com)
+
+**Jquery** For JavaScript event handling.
+
+[Jquery](https://jquery.com)
+
+**Jinja** Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.
+
+[Jinja](https://jinja.palletsprojects.com/en/3.1.x/)
+
+**Flask** A Web micro-framework for Flask Libraries.
+
+[Flask](https://palletsprojects.com/p/flask/)
+
+**Werkzeug** For password authentication and security.
+
+[Werkzeug](https://werkzeug.palletsprojects.com/en/3.0.x/)
+
+**GitHub** Was used for version control.
+
+[GitHub](https://github.com)
+
+**Heroku** Cloud platform, used to publish this web application. 
+
+[Heroku](https://heroku.com)
+
+**VSC** Visual Studio Code software was used to develop the website Integrated Development Environment **IDE**.
+
+[VS Code](https://code.visualstudio.com)
+
+**Lucid** Was used to create the wireframes.
+
+[LucidChart](https://www.lucidchart.com)
+
+
+## Contributing and Maintenance
+
+I welcome contributions from anyone interested in improving this project. Feel free to open issues and submit pull requests to suggest changes, report bugs, or add new features.
+
+Maintenance will be completed regularly, to update code and external links where necessary.
