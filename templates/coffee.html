@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="brown-text text-darken-1 center-align">Tasty Coffees!</h3>
-    <h4 class="brown-text text-darken-1 center-align">Added by our community</h4>
+    <h2 class="brown-text center-align"><i class="fa-solid fa-mug-hot"></i></h2>
+    <p class="brown-text center-align">Welcome to Tasty Coffee! This website serves as a comprehensive resource
+         for coffee enthusiasts, aficionados, and anyone curious about the world of coffee beans. Whether you're a seasoned 
+         barista, a home-brewing enthusiast, or simply someone who enjoys a good cup of joe, this platform is designed to 
+         satisfy your thirst for knowledge about all coffee types.
+    </p>
 
     <div class="col card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
