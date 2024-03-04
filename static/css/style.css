@@ -2,7 +2,7 @@
 
 /*-----------------------------------------------Colors------------------------*/
 
-/* Main: (Coffee - #b57547) (Latte - #b57547) */
+/* Main: (Coffee - #7b4f30) (Latte - #b57547) */
 
 /*-----------------------------------------------Header------------------------*/
 
@@ -18,31 +18,66 @@ nav {
     text-shadow: 2px 2px 2px #000(0, 0, 0, 0.5);
 }
 
-.sidenav {
-    background-color: #7b4f30;
+.sidenav li a {
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 200;
+    font-size: 20px;
     letter-spacing: 1px;
-    padding-left: 20px;
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 2px 2px 2px #000(0, 0, 0, 0.5);
+    color: #7b4f30;
 }
 
+.sidenav li a:hover {
+    color: #b57547;
+}
 
-/*-----------------------------------------------Flash Messages------------------------*/
+/*-----------------------------------------------Main---------------------------*/
 
+h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------------Flash Messages-----------------*/
 
 .flashes h4 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
     line-height: 2;
+    color: #fff;
+}
+
+/*-----------------------------------------------Buttons------------------------*/
+
+.btn {
+    border-radius: 25px;
+}
+
+.btn-large {
+    border-radius: 25px;
 }
 
 .btn-small {
+    border-radius: 25px;
     margin: 5px;
 }
+
+/*-----------------------------------------------Cards------------------------*/
+
+.card {
+    border-radius: 25px;
+}
+
+/*-----------------------------------------------Headers and fields-----------*/
 
 .collapsible-header .col strong {
     margin: 5px;
     line-height: 42px;
+}
+
+.card-panel {
+    border-radius: 20px;
 }
