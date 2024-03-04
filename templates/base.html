@@ -40,6 +40,7 @@
         <!-- mobile sidenav -->
 		<ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align white-text">Coffee Selector</h4></li>
+            <li><a href="{{ url_for('get_free_coffee_guide') }}"class="btn-floating btn white pulse"><i class="fas fa-glide-g">Free Guide</i></a></li>
             <li><a href="{{ url_for('get_coffee') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
