@@ -9,7 +9,9 @@ You can view the **LIVE** website through the following two links:
 
 A snapshot of the project with responsive design:
 
-![I Am Responsive](#)
+[I Am Responsive](https://ui.dev/amiresponsive?url=https://milestone-3-project-29f9ad62c493.herokuapp.com)
+
+![I Am Responsive](/images/am-i-responsive.jpeg)
 
 
 ## Table of Contents
