@@ -17,8 +17,8 @@
         <!-- Main Navigation -->
 		<nav class="nav-extended">
 			<div class="nav-wrapper">
-				<a href="{{ url_for('get_coffee') }}" class="brand-logo">Tasty Coffee</a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+				<a href="{{ url_for('get_coffee') }}">Tasty Coffee</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger right valign-wrapper center-align"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('get_coffee') }}">Home</a></li>
                     {% if session.user %}
@@ -60,7 +60,7 @@
     </style>
 
     <section>
-        <!-- flash messages -->
+        <!-- Flash Messages -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
