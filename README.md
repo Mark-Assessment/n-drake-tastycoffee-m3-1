@@ -1,8 +1,8 @@
 # Tasty Coffee
 
-This is the **README** file for a comprehensive resource for coffee enthusiasts, aficionados, and anyone curious about the world of coffee beans.
+This is the **README.md** file for a comprehensive resource for coffee enthusiasts, aficionados, and anyone curious about the world of coffee beans.
 
-You can view the **LIVE** website through the following two links:
+You can view the **LIVE website** through the following two links:
 
 [GitHub](https://github.com/OrgNateDrake/milestone-project-3)<br>
 [Heroku](https://milestone-3-project-29f9ad62c493.herokuapp.com)
