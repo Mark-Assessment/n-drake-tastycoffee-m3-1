@@ -1,8 +1,8 @@
 # Tasty Coffee
 
-This is the **TEST.md** file for a comprehensive resource for coffee enthusiasts, aficionados, and anyone curious about the world of coffee beans.
+This is the `TEST.md` file for a comprehensive resource for coffee enthusiasts, aficionados, and anyone curious about the world of coffee beans.
 
-You can view the **LIVE website** through the following two links:
+You can view the `LIVE website` through the following two links:
 
 [GitHub](https://github.com/OrgNateDrake/milestone-project-3)<br>
 [Heroku](https://milestone-3-project-29f9ad62c493.herokuapp.com)
@@ -59,7 +59,9 @@ To get a copy of this project up and running on your local machine, follow these
 - Web browser: (Chrome, Firefox, Safari, etc.)
 - IDE or Text Editor: (GitPod, Visual Studio Code, Sublime Text, Atom, etc.)
 
+
 ### Installation
+
 
 1. Clone my repository with the following link:
 
@@ -67,21 +69,22 @@ To get a copy of this project up and running on your local machine, follow these
 
 2. Open the project in your preferred IDE or Text Editor.
 
+
 ### Deployment
 
-You can view the live site through **Heroku**, using the following link:
+You can view the live site through `Heroku`, using the following link:
 
 [Heroku - Live Site](https://milestone-3-project-29f9ad62c493.herokuapp.com)
 
 The project was also deployed with GitHub Pages using the following steps...
 
 1. Log in to [GitHub](https://github.com/).
-2. At the top of the Repository (not top of page), locate and click the **Settings** Button on the menu.
-3. Scroll down the Settings page until you locate the **Pages** Section (on the left of the page) and click.
-4. Under **Build and deployment**, **Branch**. Click the dropdown called "None" and select **Main Branch**.
+2. At the top of the Repository (not top of page), locate and click the `Settings` Button on the menu.
+3. Scroll down the Settings page until you locate the `Pages` Section (on the left of the page) and click.
+4. Under `Build and deployment`, `Branch`. Click the dropdown called "None" and select `Main Branch`.
 5. The page will automatically refresh.
-6. Click **Save**.
-7. Scroll back down through the page to locate the now published [Site Link](https://github.com) in the **GitHub Pages** section.
+6. Click `Save`.
+7. Scroll back down through the page to locate the now published [Site Link](https://github.com) in the `GitHub Pages` section.
 
 
 ## Testing
@@ -109,6 +112,7 @@ The project was also deployed with GitHub Pages using the following steps...
 - **Load and Performance Testing:** Automated tools can simulate a large number of users to test system performance under heavy loads.
 - **Cross-Browser and Cross-Platform Testing:** Automated frameworks can be used to test web applications on different browsers and platforms.
 
+
 ### Manual Testing:
 
 **Principles:**
@@ -130,9 +134,11 @@ The project was also deployed with GitHub Pages using the following steps...
 
 In practice, a combination of both automated and manual testing is often employed to ensure comprehensive test coverage. Automated testing is efficient for repetitive and regression testing, while manual testing is valuable for exploratory and usability aspects. The choice between them depends on project requirements, budget constraints, and the specific nature of the testing needed for a particular software application.
 
+
 ### Manual Tests for Tasty Coffee Website
 
-To ensure the functionality, usability, and responsiveness of my Tasty Coffee web based application, a series of **manual exploratory tests** were conducted. These tests allowed me to thoroughly assess the website's performance and user experience across various scenarios and devices.
+To ensure the functionality, usability, and responsiveness of my Tasty Coffee web based application, a series of `manual exploratory tests` were conducted. These tests allowed me to thoroughly assess the website's performance and user experience across various scenarios and devices.
+
 
 #### Test Case 1: User Registration
 
@@ -252,6 +258,7 @@ This test case explores edge cases and potential unusual scenarios that may occu
 - The website should gracefully handle edge cases, providing clear error messages or guidance to the user.
 - Critical functionalities should not break under unexpected circumstances, and the website should maintain stability.
 
+
 ### Test Evaluations
 
 #### Test Case 1: User Registration
@@ -302,47 +309,53 @@ This test case explores edge cases and potential unusual scenarios that may occu
 - *Result*: Passed
 - *Comments*: The system demonstrates robustness in handling edge cases, providing clear error messages and maintaining stability even under unexpected circumstances. Critical functionalities are not compromised.
 
+
 ### Overall Evaluation:
 
 All test cases have passed, indicating that the Tasty Coffee website functions according to expectations and meets the specified requirements. The system effectively manages user roles, ensuring that only registered users can add or edit coffee profiles, while superusers have appropriate privileges. Additionally, the website exhibits responsive design and robustness in handling edge cases, contributing to a seamless user experience.
 
+
 ### W3C Validations
 
-Within W3C's validators. I have fully tested the one **CSS** stylesheet via the **Direct Input** method, this fully passed all checks on my code. I have also fully tested all three **HTML** pages via the **URI Input** method, no fails were found and all warnings were fully resolved and have now **passed all checks**.
-
-![W3C HTML Validation](#)
+Within W3C's validators. I have fully tested the one `CSS` stylesheet via the `Direct Input` method, this fully passed all checks on my code. I have also fully tested all three `HTML` pages via the `URI Input` method, no fails were found and the two warnings are due to the `Jinja` templating language i'm using.
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 [HTML Validator](https://validator.w3.org)
 
+
 ### PageSpeed Insight
 
-The website was fully tested with **PageSpeed Insight** and a positive result was seen in the following areas; `Permormance`, ` accessibility`, ` Best practices` and `SEO`.
+The website was fully tested with `PageSpeed Insight` and a positive result was seen in the following areas; `Permormance`, ` accessibility`, ` Best practices` and `SEO`.
 
 ![PageSpeed Insight](/images/pagespeed-insight.jpeg)
 
 [PageSpeed](https://pagespeed.web.dev)
 
+
 ### Wave
 
 WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content. Their philosophy is to focus on issues that they know impact end users, facilitate human evaluation, and to educate about web accessibility.
 
-![Wave Test Results](#)
+When using the evaluation tool, one error was encountered, due to an empty link. This is due to the `Jinja` templating language used, whereby no link is needed for the mobile navigation to work. The two contrast flags were ignored, due to them not being of concern.
 
-![Wave](#)
+![Wave Test Results](/images/wave-result.jpeg)
+
+[Wave](https://wave.webaim.org)
+
 
 ### JSLint
 
-I have passed all Java Script code through **JSLint** and only 2 warnings were reported, with no fundamental errors reported. The warnings are not of concern, as the code correctly runs without issue.
-
-![JSLint Test Results](#)
+I have passed all Java Script code through `JSLint` and only warnings were reported, with no fundamental errors reported. The warnings are not of concern, as the code correctly runs without issue.
 
 [JSLint](https://www.jslint.com)
 
+
 ### CI Python Linter
 
-![CI Python Linter Test Results](#)
+All python code passed through the `CI Python Linter`, with no errors found.
+
+![CI Python Linter Test Results](/images/ci-python-linter.jpeg)
 
 [JSLint](https://pep8ci.herokuapp.com)
 
@@ -352,7 +365,7 @@ I have passed all Java Script code through **JSLint** and only 2 warnings were r
 During testing, the following bugs and errors were identified and addressed:
 
 1. **Obsolete Methods:**
-   - *Description*: The following **Python Flask** methods `update_one` and `remove_one` are now obsolete in the latest version. They have been replaced by `replace_one` and `delete_one` respectively.
+   - *Description*: The following `Python Flask` methods `update_one` and `remove_one` are now obsolete in the latest version. They have been replaced by `replace_one` and `delete_one` respectively.
    - *Resolution*: I updated the `app.py` file to use the correct methods (`replace_one` and `delete_one`) to ensure function and compatibility.
 
 2. **Responsive Issue on Smaller Devices:**

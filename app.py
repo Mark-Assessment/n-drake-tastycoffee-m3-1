@@ -53,7 +53,7 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("profile", username=session["user"]))
-    
+
     return render_template("register.html")
 
 
@@ -68,11 +68,11 @@ def login():
             # ensure hashed password matches user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
+                    request.form.get("username")))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -156,6 +156,7 @@ def get_species():
     species = list(mongo.db.species.find().sort("species_type", 1))
     return render_template("species.html", species=species)
 
+
 @app.route("/add_species", methods=["GET", "POST"])
 def add_species():
     if request.method == "POST":
@@ -181,6 +182,7 @@ def edit_species(species_id):
 
     species = mongo.db.species.find_one({"_id": ObjectId(species_id)})
     return render_template("edit_species.html", species=species)
+
 
 @app.route("/delete_species/<species_id>")
 def delete_species(species_id):
