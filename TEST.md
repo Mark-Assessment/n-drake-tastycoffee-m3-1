@@ -31,16 +31,23 @@ A snapshot of the project with responsive design:
         - [Test Case 5: Deleting a Coffee Profile](#test-case-5-deleting-a-coffee-profile)
         - [Test Case 6: Searching for Coffee Profiles](#test-case-6-searching-for-coffee-profiles)
         - [Test Case 7: Responsive Design Across Devices](#test-case-7-responsive-design-across-devices)
-        - [Test Case 8: Edge Cases](test-case-8-edge-cases)
-    - [Test Evaluations](test-evaluations)
-        - [Test Case 1: User Registration](test-case-1-user-registration)
-        - [Test Case 2: User Login](test-case-2-user-login)
-        - [Test Case 3: Adding a Coffee Profile](test-case-3-adding-a-coffee-profile)
-        - [Test Case 4: Updating a Coffee Profile](test-case-4-updating-a-coffee-profile)
-        - [Test Case 5: Deleting a Coffee Profile](test-case-5-deleting-a-coffee-)
-        - [Test Case 6: Searching for Coffee Profiles](test-case-6-searching-for-coffee-profiles)
-        - [Test Case 7: Responsive Design Across Devices](test-case-7-responsive-design-across-devices)
-    - [Overall Evaluation:](overall-evaluation)
+        - [Test Case 8: Edge Cases](#test-case-8-edge-cases)
+    - [Test Evaluations](#test-evaluations)
+        - [Test Case 1: User Registration](#test-case-1-user-registration)
+        - [Test Case 2: User Login](#test-case-2-user-login)
+        - [Test Case 3: Adding a Coffee Profile](#test-case-3-adding-a-coffee-profile)
+        - [Test Case 4: Updating a Coffee Profile](#test-case-4-updating-a-coffee-profile)
+        - [Test Case 5: Deleting a Coffee Profile](#test-case-5-deleting-a-coffee-)
+        - [Test Case 6: Searching for Coffee Profiles](#test-case-6-searching-for-coffee-profiles)
+        - [Test Case 7: Responsive Design Across Devices](#test-case-7-responsive-design-across-devices)
+    - [Overall Evaluation:](#overall-evaluation)
+    - [W3C Validations](#w3c-validations)
+    - [PageSpeed Insight](#pagespeed-insight)
+    - [Wave](#wave)
+    - [JSLint](#jslint)
+    - [CI Python Linter](#ci-python-linter)
+- [Bugs](#bugs)
+- [Contributing and Maintenance](#contributing-and-maintenance)
 
 
 ## Getting Started
@@ -299,3 +306,62 @@ This test case explores edge cases and potential unusual scenarios that may occu
 
 All test cases have passed, indicating that the Tasty Coffee website functions according to expectations and meets the specified requirements. The system effectively manages user roles, ensuring that only registered users can add or edit coffee profiles, while superusers have appropriate privileges. Additionally, the website exhibits responsive design and robustness in handling edge cases, contributing to a seamless user experience.
 
+### W3C Validations
+
+Within W3C's validators. I have fully tested the one **CSS** stylesheet via the **Direct Input** method. I have also fully tested all three **HTML** pages via the **URI Input** method. No fails were found and all warnings were fully resolved and have now **passed all checks**.
+
+![W3C CSS Validation](#)
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+![W3C HTML Validation](#)
+
+[HTML Validator](https://validator.w3.org)
+
+### PageSpeed Insight
+
+![PageSpeed Insight](#)
+
+[PageSpeed](https://pagespeed.web.dev)
+
+### Wave
+
+WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content. Their philosophy is to focus on issues that they know impact end users, facilitate human evaluation, and to educate about web accessibility.
+
+![Wave Test Results](#)
+
+![Wave](#)
+
+### JSLint
+
+I have passed all Java Script code through **JSLint** and only 2 warnings were reported, with no fundamental errors reported. The warnings are not of concern, as the code correctly runs without issue.
+
+![JSLint Test Results](#)
+
+[JSLint](https://www.jslint.com)
+
+### CI Python Linter
+
+![CI Python Linter Test Results](#)
+
+[JSLint](https://pep8ci.herokuapp.com)
+
+
+## Bugs
+
+During testing, the following bugs and errors were identified and addressed:
+
+1. **Obsolete Methods:**
+   - *Description*: The following **Python Flask** methods `update_one` and `remove_one` are now obsolete in the latest version. They have been replaced by `replace_one` and `delete_one` respectively.
+   - *Resolution*: I updated the `app.py` file to use the correct methods (`replace_one` and `delete_one`) to ensure function and compatibility.
+
+2. **Responsive Issue on Smaller Devices:**
+   - *Description*: The 'coffee.html' page was not responsive on smaller devices, causing layout and content display issues.
+   - *Resolution*: I revised the html code, adding additional `Divs` to ensure proper responsiveness on smaller devices. I also implemented appropriate breakpoints and adjustments for improved usability and readability.
+
+
+## Contributing and Maintenance
+
+I welcome contributions from anyone interested in improving this web application. Feel free to open issues and submit pull requests to suggest changes, report bugs, or add new features.
+
+Maintenance will be completed regularly, to update code and external links where necessary.

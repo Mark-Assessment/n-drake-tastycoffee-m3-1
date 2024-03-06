@@ -42,6 +42,7 @@ A snapshot of the project with responsive design:
    - [Add/Edit Coffee Profiles Page Small/Medium](#addedit-coffee-profiles-page-smallmedium)
    - [Add/Edit Coffee Species Page Small/Medium](#addedit-coffee-species-page-smallmedium)
 - [Attribution](#attribution)
+- [Testing](#testing)
 - [Contribution and Maintenance](#contribution-and-maintenance)
 
 
@@ -293,6 +294,10 @@ Apart from what has been attributed below. All code within this project was prog
 **Lucid** Was used to create the wireframes.
 
 [LucidChart](https://www.lucidchart.com)
+
+## Testing
+
+Please follow this link for my full [TEST.md](https://github.com/OrgNateDrake/milestone-project-3/blob/main/TEST.md).
 
 
 ## Contributing and Maintenance
