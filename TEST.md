@@ -308,19 +308,19 @@ All test cases have passed, indicating that the Tasty Coffee website functions a
 
 ### W3C Validations
 
-Within W3C's validators. I have fully tested the one **CSS** stylesheet via the **Direct Input** method. I have also fully tested all three **HTML** pages via the **URI Input** method. No fails were found and all warnings were fully resolved and have now **passed all checks**.
-
-![W3C CSS Validation](#)
-
-[CSS Validator](https://jigsaw.w3.org/css-validator/)
+Within W3C's validators. I have fully tested the one **CSS** stylesheet via the **Direct Input** method, this fully passed all checks on my code. I have also fully tested all three **HTML** pages via the **URI Input** method, no fails were found and all warnings were fully resolved and have now **passed all checks**.
 
 ![W3C HTML Validation](#)
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 [HTML Validator](https://validator.w3.org)
 
 ### PageSpeed Insight
 
-![PageSpeed Insight](#)
+The website was fully tested with **PageSpeed Insight** and a positive result was seen in the following areas; `Permormance`, ` accessibility`, ` Best practices` and `SEO`.
+
+![PageSpeed Insight](/images/pagespeed-insight.jpeg)
 
 [PageSpeed](https://pagespeed.web.dev)
 
