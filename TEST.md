@@ -23,18 +23,24 @@ A snapshot of the project with responsive design:
 - [Testing](#testing)
     - [Automated Testing](#automated-testing)
     - [Manual Testing](#manual-testing)
-    - [Manual Testing Completed](#manual-testing-completed)
     - [Manual Tests for Tasty Coffee Website](#manual-tests-for-tasty-coffee-website)
-    - [Test Case 1: User Registration](#test-case-1-user-registration)
-    - [Test Case 2: User Login](#test-case-2-user-login)
-    - [Test Case 3: Adding a Coffee Profile](#test-case-3-adding-a-coffee-profile)
-    - [Test Case 4: Updating a Coffee Profile](#test-case-4-updating-a-coffee-profile)
-    - [Test Case 5: Deleting a Coffee Profile](#test-case-5-deleting-a-coffee-profile)
-    - [Test Case 6: Searching for Coffee Profiles](#test-case-6-searching-for-coffee-profiles)
-    - [Test Case 7: Responsive Design Across Devices](#test-case-7-responsive-design-across-devices)
-    - [Test Case 8: Edge Cases](test-case-8-edge-cases)
-
-
+        - [Test Case 1: User Registration](#test-case-1-user-registration)
+        - [Test Case 2: User Login](#test-case-2-user-login)
+        - [Test Case 3: Adding a Coffee Profile](#test-case-3-adding-a-coffee-profile)
+        - [Test Case 4: Updating a Coffee Profile](#test-case-4-updating-a-coffee-profile)
+        - [Test Case 5: Deleting a Coffee Profile](#test-case-5-deleting-a-coffee-profile)
+        - [Test Case 6: Searching for Coffee Profiles](#test-case-6-searching-for-coffee-profiles)
+        - [Test Case 7: Responsive Design Across Devices](#test-case-7-responsive-design-across-devices)
+        - [Test Case 8: Edge Cases](test-case-8-edge-cases)
+    - [Test Evaluations](test-evaluations)
+        - [Test Case 1: User Registration](test-case-1-user-registration)
+        - [Test Case 2: User Login](test-case-2-user-login)
+        - [Test Case 3: Adding a Coffee Profile](test-case-3-adding-a-coffee-profile)
+        - [Test Case 4: Updating a Coffee Profile](test-case-4-updating-a-coffee-profile)
+        - [Test Case 5: Deleting a Coffee Profile](test-case-5-deleting-a-coffee-)
+        - [Test Case 6: Searching for Coffee Profiles](test-case-6-searching-for-coffee-profiles)
+        - [Test Case 7: Responsive Design Across Devices](test-case-7-responsive-design-across-devices)
+    - [Overall Evaluation:](overall-evaluation)
 
 
 ## Getting Started
@@ -117,126 +123,179 @@ The project was also deployed with GitHub Pages using the following steps...
 
 In practice, a combination of both automated and manual testing is often employed to ensure comprehensive test coverage. Automated testing is efficient for repetitive and regression testing, while manual testing is valuable for exploratory and usability aspects. The choice between them depends on project requirements, budget constraints, and the specific nature of the testing needed for a particular software application.
 
-### Manual Testing Completed
-
-To ensure the functionality, usability, and responsiveness of my web based application, a series of manual exploratory tests were conducted. These tests allowed me to thoroughly assess the website's performance and user experience across various scenarios and devices.
-
 ### Manual Tests for Tasty Coffee Website
 
-### Test Case 1: User Registration
+To ensure the functionality, usability, and responsiveness of my Tasty Coffee web based application, a series of **manual exploratory tests** were conducted. These tests allowed me to thoroughly assess the website's performance and user experience across various scenarios and devices.
 
-**Description:**
-This test case verifies the functionality of user registration on the Tasty Coffee website.
+#### Test Case 1: User Registration
 
-**Steps:**
+*Description:*
+This test case verifies the functionality of user registration on the Tasty Coffee website. Making sure that the registration passwords are salted on our databases.
+
+*Steps:*
 1. Open the Tasty Coffee website.
 2. Navigate to the registration page.
 3. Fill in the required fields with valid information (e.g., username, email, password).
 4. Click on the "Register" button.
 
-**Expected Results:**
+*Expected Results:*
 - The user should be successfully registered and redirected to the home page.
-- The user's profile should be created in the database.
+- The user's profile should be created in the database, with password being fully salted.
 
-### Test Case 2: User Login
+#### Test Case 2: User Login
 
-**Description:**
+*Description:*
 This test case verifies the functionality of user login on the Tasty Coffee website.
 
-**Steps:**
+*Steps:*
 1. Open the Tasty Coffee website.
 2. Navigate to the login page.
 3. Enter valid login credentials (username/email and password).
 4. Click on the "Login" button.
 
-**Expected Results:**
+*Expected Results:*
 - The user should be successfully logged in and redirected to the home page.
 - The user's session should be maintained.
 - Unauthorised users with bad credentials should not be allowed to login.
 
-### Test Case 3: Adding a Coffee Profile
+#### Test Case 3: Adding a Coffee Profile
 
-**Description:**
+*Description:*
 This test case verifies the functionality of adding a coffee profile to the website. Only by a registered user or a superuser.
 
-**Steps:**
+*Steps:*
 1. Login to the Tasty Coffee website.
 2. Navigate to the profile creation page.
 3. Fill in the required fields for the coffee profile (species, strength, quality, description).
 4. Click on the "Add Profile" button.
 
-**Expected Results:**
+*Expected Results:*
 - The coffee profile should be successfully added to the database, with the username linked.
 - The newly added profile should be searchable by visitors to the site.
 
-### Test Case 4: Updating a Coffee Profile
+#### Test Case 4: Updating a Coffee Profile
 
-**Description:**
+*Description:*
 This test case verifies the functionality of updating an existing coffee profile on the website. Only by the original posting user or a superuser.
 
-**Steps:**
+*Steps:*
 1. Login to the Tasty Coffee website.
 2. Navigate to the profile editing page for an existing coffee profile.
 3. Modify the desired fields (species, strength, quality, description).
 4. Click on the "Update Profile" button.
 
-**Expected Results:**
+*Expected Results:*
 - The coffee profile should be successfully updated in the database.
 - Changes should be reflected in the profile details displayed on the website.
 
-### Test Case 5: Deleting a Coffee Profile
+#### Test Case 5: Deleting a Coffee Profile
 
-**Description:**
+*Description:*
 This test case verifies the functionality of deleting an existing coffee profile from the website. Only by the original posting user or a superuser.
 
-**Steps:**
+*Steps:*
 1. Login to the Tasty Coffee website.
 2. Navigate to the profile editing page for an existing coffee profile.
 3. Click on the "Delete Profile" button.
 
-**Expected Results:**
+*Expected Results:*
 - The coffee profile should be successfully deleted from the database.
 - The profile should no longer be visible or searchable on the website.
 
-### Test Case 6: Searching for Coffee Profiles
+#### Test Case 6: Searching for Coffee Profiles
 
-**Description:**
+*Description:*
 This test case verifies the functionality of searching for coffee profiles on the Tasty Coffee website. By any user, registered or not registered.
 
-**Steps:**
+*Steps:*
 1. Open the Tasty Coffee website.
 2. Locate the search bar.
 3. Enter a search query (e.g., coffee species, strength, quality).
 4. Press the "Enter" key or click on the search icon.
 
-**Expected Results:**
+*Expected Results:*
 - Relevant coffee profiles matching the search query should be displayed.
 - The search results should be accurate and relevant to the query entered.
 
-### Test Case 7: Responsive Design Across Devices
+#### Test Case 7: Responsive Design Across Devices
 
-**Description:**
+*Description:*
 This test case verifies the responsiveness of the Tasty Coffee website across various devices and screen sizes.
 
-**Steps:**
+*Steps:*
 1. Access the Tasty Coffee website using different devices (e.g., desktop, laptop, tablet, smartphone).
 2. Resize the browser window to simulate different screen sizes.
 3. Navigate through different pages and features of the website.
 
-**Expected Results:**
+*Expected Results:*
 - The website should adapt smoothly to different screen sizes without any layout or functionality issues.
 - Content should be readable and accessible on all devices, with no horizontal scrolling required.
 
-### Test Case 8: Edge Cases
+#### Test Case 8: Edge Cases
 
-**Description:**
+*Description:*
 This test case explores edge cases and potential unusual scenarios that may occur on the Tasty Coffee website.
 
-**Steps:**
+*Steps:*
 1. Perform actions or input data that are outside the normal usage patterns.
 2. Attempt to trigger errors or unexpected behavior by entering invalid data or performing uncommon actions.
 3. Test the robustness of the website's error handling and recovery mechanisms.
 
-**Expected Results:**
+*Expected Results:*
 - The website should gracefully handle edge cases, providing clear error messages or guidance to the user.
 - Critical functionalities should not break under unexpected circumstances, and the website should maintain stability.
+
+### Test Evaluations
+
+#### Test Case 1: User Registration
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: User registration functionality is working as expected, ensuring that passwords are salted on our database for security. Only registered users/superusers should be able to add and edit coffee profiles, which aligns with the system requirements.
+
+#### Test Case 2: User Login
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: User login functionality is successful, and only authenticated users/superusers can access certain features such as adding or editing coffee profiles.
+
+#### Test Case 3: Adding a Coffee Profile
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: The system correctly restricts profile creation to registered users. New coffee profiles can be added by users, fulfilling the requirement.
+
+#### Test Case 4: Updating a Coffee Profile
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: Users are able to update their own coffee profiles, ensuring that contributors can modify their contributions as needed. This aligns with the expected behavior where only the creator/superuser can edit their profiles.
+
+#### Test Case 5: Deleting a Coffee Profile
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: Deleting coffee profiles is restricted to the profile creator, ensuring data integrity. Superusers are able to delete any profiles, as expected.
+
+#### Test Case 6: Searching for Coffee Profiles
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: The search functionality works as expected, allowing visitors to find relevant coffee profiles based on specified criteria. Search results are accurate and consistent.
+
+#### Test Case 7: Responsive Design Across Devices
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: The website exhibits responsive design, adapting seamlessly to various devices and screen sizes. Content remains accessible and readable across different platforms, ensuring a positive user experience.
+
+#### Test Case 8: Edge Cases
+
+*Evaluation:*
+- *Result*: Passed
+- *Comments*: The system demonstrates robustness in handling edge cases, providing clear error messages and maintaining stability even under unexpected circumstances. Critical functionalities are not compromised.
+
+### Overall Evaluation:
+
+All test cases have passed, indicating that the Tasty Coffee website functions according to expectations and meets the specified requirements. The system effectively manages user roles, ensuring that only registered users can add or edit coffee profiles, while superusers have appropriate privileges. Additionally, the website exhibits responsive design and robustness in handling edge cases, contributing to a seamless user experience.
+
