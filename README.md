@@ -41,6 +41,7 @@ A snapshot of the project with responsive design:
    - [Home Page Small/Medium](#home-page-smallmedium)
    - [Add/Edit Coffee Profiles Page Small/Medium](#addedit-coffee-profiles-page-smallmedium)
    - [Add/Edit Coffee Species Page Small/Medium](#addedit-coffee-species-page-smallmedium)
+- [Database Entity relationship diagrams](#database-entity-relationship-diagrams)
 - [Attribution](#attribution)
 - [Testing](#testing)
 - [Contribution and Maintenance](#contribution-and-maintenance)
@@ -239,6 +240,12 @@ This website is meticulously crafted with the following design choices in mind t
 ### Add/Edit Coffee Species Page Small/Medium
 
 ![Add/Edit Coffee Species Page](/images/small-med-wireframe-add-edit-species.jpeg)
+
+
+## Database Entity relationship diagrams
+
+![Entity Relationship Diagram](/images/erd-tasty-coffee.jpeg)
+
 
 
 ## Attribution
