@@ -263,12 +263,12 @@ This SQL code creates the necessary tables and relationships to represent the en
 
 ## Attribution
 
-Apart from what has been attributed below. All code within this project was programmed by *Nathan Drake* and utilises skills learnt from tutorials by *The Code Institute*, within their *Full Stack Web Development* course.
+Apart from what has been attributed below. All code within this project was programmed by `Nathan Drake` and utilises skills learnt from walkthroughs by `The Code Institute`, within their `Full Stack Web Development` course.
 
 **Materialize** Basic framework was utilised and then tailored to the requirements set-out for this project, within the following areas:
 
 1. Navbar.
-2. Collapsible Popouts
+2. Collapsible Pop-outs
 3. Buttons.
 4. Grids and responsive behaviours.
 5. Search.
@@ -307,7 +307,7 @@ Apart from what has been attributed below. All code within this project was prog
 
 [Heroku](https://heroku.com)
 
-**VSC** Visual Studio Code software was used to develop the website Integrated Development Environment **IDE**.
+**VSC** Visual Studio Code software was used to develop the website Integrated Development Environment `IDE`.
 
 [VS Code](https://code.visualstudio.com)
 

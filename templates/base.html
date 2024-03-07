@@ -24,7 +24,7 @@
 <body>
 
 	<header>
-        <!-- Main Navigation -->
+        <!-- Main Navigation --------------------->
 		<nav class="nav-extended">
 			<div class="nav-wrapper">
 				<a href="{{ url_for('get_coffee') }}">Tasty Coffee</a>
@@ -46,7 +46,7 @@
 			</div>
 		</nav>
 
-        <!-- Mobile Navigation -->
+        <!-- Mobile Navigation ---------------------->
 		<ul class="sidenav right" id="mobile-demo">
             <li><a href="{{ url_for('get_coffee') }}">Home</a></li>
             {% if session.user %}
@@ -64,7 +64,7 @@
 	</header>
 
     <section>
-        <!-- Flash Messages -->
+        <!-- Flash Messages --------------------->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
