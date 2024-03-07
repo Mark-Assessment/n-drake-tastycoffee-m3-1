@@ -42,6 +42,7 @@ A snapshot of the project with responsive design:
    - [Add/Edit Coffee Profiles Page Small/Medium](#addedit-coffee-profiles-page-smallmedium)
    - [Add/Edit Coffee Species Page Small/Medium](#addedit-coffee-species-page-smallmedium)
 - [Database Entity relationship diagrams](#database-entity-relationship-diagrams)
+- [SQL Connections](#sql-connections)
 - [Attribution](#attribution)
 - [Testing](#testing)
 - [Contribution and Maintenance](#contribution-and-maintenance)
@@ -244,8 +245,20 @@ This website is meticulously crafted with the following design choices in mind t
 
 ## Database Entity relationship diagrams
 
-![Entity Relationship Diagram](/images/erd-tasty-coffee.jpeg)
+![Entity Relationship Diagram](/images/erd-tasty-coffee-1.jpeg)
 
+
+## SQL Connections
+
+![SQL Connections](/images/sql-connections.jpeg)
+
+**Explanation:**
+
+1. The `users` table stores information about users including their unique ID (`user_id`), username, and password salt (`password_salt`).
+2. The `species` table stores information about coffee species including their unique ID (`species_id`) and species type.
+3. The `coffee` table stores information about different types of coffee including their unique ID (`coffee_id`), species ID (`species_id`), name, strength, quality, description, and the ID of the user who created it (`created_by`). It includes foreign keys to reference the `species` and `users` tables.
+
+This SQL code creates the necessary tables and relationships to represent the entities and relationships described in the ERD.
 
 
 ## Attribution
