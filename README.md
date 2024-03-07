@@ -311,7 +311,7 @@ Apart from what has been attributed below. All code within this project was prog
 
 [VS Code](https://code.visualstudio.com)
 
-**Lucid** Was used to create the wireframes.
+**Lucid** Was used to create the wireframes and ERD.
 
 [LucidChart](https://www.lucidchart.com)
 
